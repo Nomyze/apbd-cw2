@@ -1,8 +1,8 @@
 ﻿class Program {
     static double get_avg(int[] arr) {
         int  sum = 0;
-        foreach(int num in arr) {
-            sum += num;
+        foreach(int number in arr) {
+            sum += number;
         }
         return (double) sum / (double) arr.Length;
     }
