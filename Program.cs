@@ -1,4 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, Mod1!");
-Console.WriteLine("Hello, Mod2!");
-Console.WriteLine("Hello, Mod3!");
+﻿class Program {
+    static double get_avg(int[] arr) {
+        int  sum = 0;
+        foreach(int num in arr) {
+            sum += num;
+        }
+        return (double) sum / (double) arr.Length;
+    }
+    static void Main() {
+        int[] arr = {1, 2, 3, 4, 5, 5};
+
+        Console.WriteLine(get_avg(arr));
+    }
+}
